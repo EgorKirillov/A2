@@ -5,7 +5,6 @@ import {HeaderMenu} from "./headerMenu/headerMenu";
 
 const {width, height} = Dimensions.get("screen")
 const WIDTH = width
-const HEIGHT = height
 
 let logoSvg = require('../../assets/img/a1logopng.png');
 let ask = require('../../assets/img/asqPng50.png');
@@ -21,21 +20,15 @@ export const HeaderApp = () => {
     <>
       <View style={styles.header}>
         <View style={styles.logoContainer}>
+        
           <Image style={styles.logo} source={logoSvg}/>
+          
           <View style={styles.selectUser}>
-            
             <TouchableWithoutFeedback onPress={pressMenu}>
-              <Text>выпадающее меню</Text>
+              <Text>select number</Text>
             </TouchableWithoutFeedback>
-            {/*<RNPickerSelect*/}
-            {/*             onValueChange={(value) => alert(value)}*/}
-            {/*  items={[*/}
-            {/*    {label: 'phone1', value: 'phone1'},*/}
-            {/*    {label: 'phone2', value: 'phone1'},*/}
-            {/*    {label: 'internet', value: 'internet'},*/}
-            {/*  ]}*/}
-            {/*/>*/}
           </View>
+          
         </View>
         
         <View style={styles.rightLogoContainer}><Image style={styles.logo} source={ask}/></View>

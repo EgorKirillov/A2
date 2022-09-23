@@ -1,10 +1,9 @@
 import React from 'react';
 import {Dimensions, Image, ImageSourcePropType, StyleSheet, View} from 'react-native';
-import {NavigateLink} from "./navigateLink";
+import {NavigateLink} from "../navigateLink";
 
 const {width, height} = Dimensions.get("screen")
 const WIDTH = width
-const HEIGHT = height
 
 type PromoPropsType = {
   sourse: ImageSourcePropType
@@ -13,13 +12,9 @@ type PromoPropsType = {
 export const Promo = (props: PromoPropsType) => {
 
   return (
-
         <View style={[styles.promo, styles.shadow]}>
-          
           <Image style={{width:'100%'}} source={props.sourse}/>
           <NavigateLink key={'4'} text={'Перейти'}/>
-        
-        
         </View>
 
   )}
@@ -40,7 +35,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.30,
     shadowRadius: 4.65,
-    
     elevation: 8,
   },
   

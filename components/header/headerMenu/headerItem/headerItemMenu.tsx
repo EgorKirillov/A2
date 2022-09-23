@@ -4,7 +4,6 @@ import {Dimensions, StyleSheet, Text, View} from 'react-native';
 
 const {width, height} = Dimensions.get("screen")
 const WIDTH = width
-const HEIGHT = height
 
 type HeaderItenMenuPropsType = {
   name: string
@@ -57,6 +56,4 @@ const styles = StyleSheet.create({
   whiteText: {
     color:'#fff',
   },
-  
-
 });
